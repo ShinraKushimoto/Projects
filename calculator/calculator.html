@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+</head>
+<body>
+        <!-- Navbar -->
+        
+        <nav class="navbar navbar-primary bg-primary">
+          <div class="container">
+            <a class="navbar-brand mx-auto" href="#">
+              <h1 class="fw-bolder text-white">Simple Calculator</h1>
+            </a>
+          </div>
+        </nav>
+        <!-- End of Navbar -->
+        <div class="container my-5">
+        <div class="row">
+        <div class="col-4 bg-primary mx-auto p-5 rounded shadow-lg">
+          
+        <input type="text" id="screen" class="form-control form-control-lg mb-3">
+     
+        <div class="row">
+        <div class="col-3 my-1">
+        <button value="9" onclick="nine(9)" class="btn btn-light w-100">9</button>
+        </div>
+        <div class="col-3 my-1">
+        <button value ="8" onclick ="eight(8)" class="btn btn-light w-100">8</button>
+        </div>
+        <div class="col-3 my-1">
+        <button value ="7" onclick ="seven(7)" class="btn btn-light w-100">7</button>
+        </div>
+        <div class="col-3 my-1">
+        <button value ="/" onclick ="divide()" class="btn btn-light w-100">/</button>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-3 my-1">
+        <button value ="6" onclick ="six(6)" class="btn btn-light w-100">6</button>
+        
+        </div>
+        
+        <div class="col-3 my-1">
+        
+        <button value ="5" onclick ="five(5)" class="btn btn-light w-100">5</button>
+        
+        </div>
+        
+        <div class="col-3 my-1">
+        
+        <button value ="4" onclick ="four(4)" class="btn btn-light w-100">4</button>
+        
+        </div>
+        
+        <div class="col-3 my-1">
+        
+        <button value ="-" onclick ="minus()" class="btn btn-light w-100">-</button>
+        
+        </div>
+        
+        </div>
+        
+        <div class="row">
+        
+        <div class="col-3 my-1">
+        
+        <button value ="3" onclick ="three(3)" class="btn btn-light w-100">3</button>
+        
+        </div>
+        
+        <div class="col-3 my-1">
+        
+        <button value ="2" onclick ="two(2)" class="btn btn-light w-100">2</button>
+        
+        </div>
+        
+        <div class="col-3 my-1">
+        
+        <button value ="1" onclick ="one(1)" class="btn btn-light w-100">1</button>
+        
+        </div>
+        
+        <div class="col-3 my-1">
+        <button value ="+" onclick ="plus()" class="btn btn-light w-100">+</button>
+        
+        </div>
+        
+        </div>
+        
+        <div class="row">
+        <div class="col my-1">
+        <button value ="=" onclick ="equals()" class="btn btn-light w-100">=</button>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- End of Calculator -->
+        <script>
+          const output = document.getElementById('screen');
+             function nine() {
+                 output.value += 9;
+             }
+             function eight() {
+                 output.value += 8;
+             }
+             function seven() {
+                 output.value += 7;
+             }
+             function six() {
+                 output.value += 6;
+             }
+             function five() {
+                 output.value += 5;
+             }
+             function four() {
+                 output.value += 4;
+             }
+             function three() {
+                 output.value += 3;
+             }
+             function two() {
+                 output.value += 2;
+             }
+             function one() {
+                 output.value += 1;
+             }
+             function plus() {
+                 output.value += '+';
+             }
+             function divide() {
+                 output.value += '/';
+             }
+             function minus() {
+                 output.value += '-';
+             }
+             function equals() {
+                 output.value = eval(output.value);
+             }
+         </script>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>

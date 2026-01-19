@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script>
+		const output = document.getElementById('screen');
+		   function nine() {
+			   output.value += 9;
+		   }
+		   function eight() {
+			   output.value += 8;
+		   }
+		   function seven() {
+			   output.value += 7;
+		   }
+		   function six() {
+			   output.value += 6;
+		   }
+		   function five() {
+			   output.value += 5;
+		   }
+		   function four() {
+			   output.value += 4;
+		   }
+		   function three() {
+			   output.value += 3;
+		   }
+		   function two() {
+			   output.value += 2;
+		   }
+		   function one() {
+			   output.value += 1;
+		   }
+		   function plus() {
+			   output.value += '+';
+		   }
+		   function divide() {
+			   output.value += '/';
+		   }
+		   function minus() {
+			   output.value += '-';
+		   }
+		   function equals() {
+			   output.value = eval(output.value);
+		   }
+	   </script>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-primary bg-primary">
+	  <div class="container">
+	    <a class="navbar-brand mx-auto" href="#">
+	      <h1 class="fw-bolder text-white">Simple Calculator</h1>
+	    </a>
+	  </div>
+	</nav>
+	<!-- End of Navbar -->
+
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-4 bg-primary mx-auto p-5 rounded shadow-lg">
+
+				<input type="text" name="" id="screen" class="form-control form-control-lg mb-3">
+
+
+				<div class="row">
+					<div class="col-3 my-1">
+						<button onclick="nine(9)" class="btn btn-light w-100">9</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="eight()" class="btn btn-light w-100">8</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="seven()" class="btn btn-light w-100">7</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="divide()" class="btn btn-light w-100">/</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3 my-1">
+						<button onclick ="six()" class="btn btn-light w-100">6</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="five()" class="btn btn-light w-100">5</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="four()" class="btn btn-light w-100">4</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="times()" class="btn btn-light w-100">*</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3 my-1">
+						<button onclick ="three()" class="btn btn-light w-100">3</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="two()" class="btn btn-light w-100">2</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="one()" class="btn btn-light w-100">1</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="minus()" class="btn btn-light w-100">-</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-9 my-1">
+						<button onclick ="equals()" class="btn btn-light w-100">=</button>
+					</div>
+					<div class="col-3 my-1">
+						<button onclick ="plus()" class="btn btn-light w-100">+</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Calculator -->
+</body>
+</html>
