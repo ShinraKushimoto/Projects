@@ -1,0 +1,27 @@
+customer_id,customer_name,customer_contact,customer_email,customer_address,,,,,,
+1,Michael,9098064199,michael@gmail.com,"Carmen, Davao del Norte",,,,,,
+delivery_prod_id,delivery_prod_sku,delivery_prod_desc,delivery_prod_cost,delivery_prod_unit,delivery_tot_cost,supplier_order_num,,,,
+1,P001,Instant noodles (Payless Beef 55g),25,5,125,1,,,,
+4,P002,Canned sardines (Mega 155g),10,10,100,1,,,,
+5,P003,Canned corned beef (Argentina 175g),10,20,200,1,,,,
+purchase_id,customer,total,date_purchase,,,,,,,
+1,Michael,35,1/6/2023 2:30,,,,,,,
+pdid,purchase_id,prod_id,quantity,,,,,,,
+1,1,1,5,,,,,,,
+prod_id,prod_sku,prod_desc,prod_status,prod_price,prod_quant,prod_total_amount,prod_date_added,prod_date_updated,,
+1,P001,Instant noodles (Payless Beef 55g),In Stock,7,1000,7000,2/1/2023 20:32,2/1/2023 20:32,,
+2,P002,Canned sardines (Mega 155g),In Stock,20,1000,20000,2/1/2023 20:32,2/1/2023 20:32,,
+3,P003,Canned corned beef (Argentina 175g),In Stock,38,1000,38000,2/1/2023 20:32,2/1/2023 20:32,,
+4,P004,Canned meat loaf (Argentina 150g),In Stock,21,1000,21000,2/1/2023 20:32,2/1/2023 20:32,,
+5,P005,Canned sausage (CDO 70g),In Stock,23,1000,23000,2/1/2023 20:32,2/1/2023 20:32,,
+6,P006,Loaf bread,In Stock,60,1000,60000,2/1/2023 20:32,2/1/2023 20:32,,
+7,P007,Canned tuna (Century 180g),In Stock,37,1000,37000,2/1/2023 20:32,2/1/2023 20:32,,
+8,P008,Canned pineapple (Dole 822g),In Stock,90,1000,90000,2/1/2023 20:32,2/1/2023 20:32,,
+9,P009,Eggs (free range large),In Stock,8,1000,8000,2/1/2023 20:32,2/1/2023 20:32,,
+10,P010,Instant coffee (Kopiko 10x27.5g),In Stock,70,1000,70000,2/1/2023 20:32,2/1/2023 20:32,,
+user_id,user_num,username,user_pass,user_fname,user_lname,user_age,user_bdate,user_address,user_position,user_shift
+1,U001,michael,12345,Michael,Belleza,21,11/29/2022,"Carmen, Davao del Norte",Admin,NULL
+2,U002,Jhimboy,12345,Jhimboy,Bulay-og,21,1/11/2023,Panabo City,Manager,NULL
+3,U003,Nathaniel,12345,Nathaniel,Buala,21,10/6/2022,"Carmen, Davao del Norte",Cashier,NULL
+supplier_id,supplier_name,supplier_contact,supplier_email,supplier_address,supplier_del_date,supplier_del_update,supplier_del_status,supplier_order_num,,
+1,Walmart,666,Warlmart@gmail.com,USA,1/3/2023 12:15,1/3/2023 12:15,In-Transit,1,,
